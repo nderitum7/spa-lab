@@ -1,0 +1,123 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+form label {
+    width: 100%;
+}
+
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #3157a4;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #203d78;
+}
+
+#results,
+#favorites {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #00000015;
+    overflow-wrap: anywhere;
+}
+
+.definition {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.word-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.favorite-item {
+    margin: 10px 0;
+}
+
+.favorite-word {
+    background: none;
+    color: #3157a4;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+body.dark {
+    background: #1e1e1e;
+    color: #f4f4f4;
+}
+
+body.dark #results,
+body.dark #favorites {
+    background: #2d2d2d;
+}
+
+body.dark input {
+    background: #333;
+    color: white;
+    border-color: #666;
+}
+
+body.dark .definition {
+    border-color: #555;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form input,
+    form button {
+        width: 100%;
+    }
+}
+
